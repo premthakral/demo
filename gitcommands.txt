@@ -1,0 +1,67 @@
+Microsoft Windows [Version 10.0.19043.1288]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\dell>d:
+
+D:\>cd code
+
+D:\code>git clone https://github.com/premthakral/demo.git
+Cloning into 'demo'...
+info: please complete authentication in your browser...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+D:\code>cd demo
+
+D:\code\demo>git checkout
+Your branch is up to date with 'origin/main'.
+
+D:\code\demo>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        p1.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\code\demo>git add p1.py
+
+D:\code\demo>git commit -m "first program of python"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'dell@DESKTOP-8AJIG88.(none)')
+
+D:\code\demo>git config --global user.email "thakralprem4@gmail.com"
+
+D:\code\demo>git config --global user.name "premthakral"
+
+D:\code\demo>git commit -m "first program of python"
+[main 1d1b0fe] first program of python
+ 1 file changed, 5 insertions(+)
+ create mode 100644 p1.py
+
+D:\code\demo>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 382 bytes | 382.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/premthakral/demo.git
+   dca063d..1d1b0fe  main -> main
+
+D:\code\demo>
